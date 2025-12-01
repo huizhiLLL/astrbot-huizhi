@@ -56,7 +56,7 @@ class Main(star.Star):
         ]
         return ltmse["group_icl_enable"] or ltmse["active_reply"]["enable"]
 
-    @filter.command("help")
+    @filter.command("帮助")
     async def help(self, event: AstrMessageEvent):
         """查看帮助"""
         await self.help_c.help(event)
